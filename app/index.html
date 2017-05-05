@@ -1,0 +1,16 @@
+<script>
+    const template = require('./template.js');
+    var title = "Home";
+    var head = '<link href="css/bootstrapper.css" rel="stylesheet">';
+    var body = `
+        <div class="center width-80 height-100 arial">
+           <div class=" width-100 height-20 arial">
+                <input type="text" id="query">
+                <button id="submit">Search</button>
+           </div>
+           <div class=" width-100 height-80 arial" id="results">
+           </div>
+        </div>
+    `;
+    template.createPage(title,head,body);
+</script>
